@@ -5,7 +5,8 @@
 * {
   --cream: #fffff6;
   --dkCream: #f2f2e9;
-  --green: ;
+  --dkGray: #4c4c49;
+  --green: #6ac66b;
   --blue: #549bea;
   --orange: #ff914d;
   --yellow: #ffbd59;
@@ -62,7 +63,7 @@ h1,
   font-variant: small-caps;
   letter-spacing: 3px;
   font-size: 3em;
-  color: #4c4c49;
+  color: var(--dkGray);
 }
 
 h2 {
@@ -76,7 +77,7 @@ h3 {
 
 h5 {
   font-family: "Caveat Brush", cursive;
-  color: #4c4c49;
+  color: var(--dkGray);
   font-size: 40px;
   padding-top: 30px;
 }
@@ -92,7 +93,7 @@ a {
 }
 
 .badge {
-  background-color: #6ac66b;
+  background-color: var(--green);
   margin-left: 20px;
   font-size: medium;
   font-weight: 900;
@@ -101,7 +102,8 @@ a {
 
 #bar-header {
   font-weight: bold;
-  color: #4c4c49;
+  color: var(--dkGray);
+  margin-bottom: -25px;
 }
 
 #bar-header:hover {
@@ -140,8 +142,12 @@ a {
 }
 
 .btn:hover {
-  background-color: #4c4c49;
+  background-color: var(--dkGray);
   color: #dddddd;
+}
+
+.btn-pair a:first-child {
+  margin-right: 20px;
 }
 
 .dashboard-btn {
@@ -160,7 +166,7 @@ a {
 .applychanges-btn,
 .l3-btn,
 .l8-btn {
-  background-color: #6ac66b;
+  background-color: var(--green);
 }
 
 .donate-btn,
@@ -182,10 +188,6 @@ a {
 .l4-btn,
 .l7-btn {
   background-color: var(--yellow);
-}
-
-.donate-btn {
-  margin-right: 20px;
 }
 
 .goback-btn,
@@ -322,8 +324,17 @@ hr {
   display: block;
 }
 
+#full-logo img {
+  width: 200px;
+  margin-left: 30px;
+}
+
 #mini-logo {
   display: none;
+}
+
+#mini-logo img {
+  width: 45px;
 }
 
 /* BOOKING */

@@ -18,11 +18,7 @@ function Navbar() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          src={fullLogo}
-          alt="Logo"
-          style={{ width: "200px", marginLeft: "30px" }}
-        />
+        <img src={fullLogo} alt="Logo" />
       </a>
       <a
         id="mini-logo"
@@ -30,10 +26,10 @@ function Navbar() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={miniLogo} alt="Logo" style={{ width: "45px" }} />
+        <img src={miniLogo} alt="Logo" />
       </a>
       <Link to="/" id="bar-header-link">
-        <h1 id="bar-header" style={{ marginBottom: "-25px" }}>
+        <h1 id="bar-header">
           Vbb Portal
           <span className="badge badge-secondary">NEW</span>
         </h1>
@@ -56,7 +52,6 @@ function Navbar() {
               href="https://www.villagebookbuilders.org/donate/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ marginRight: "20px" }}
             >
               DONATE
             </a>
@@ -66,11 +61,7 @@ function Navbar() {
           </div>
         ) : (
           <div className="btn-pair">
-            <Link
-              to="/register"
-              className="btn btn-light register-btn"
-              style={{ marginRight: "20px" }}
-            >
+            <Link to="/register" className="btn btn-light register-btn">
               REGISTER
             </Link>
             <Link to="/dashboard" className="btn btn-light signin-btn">
