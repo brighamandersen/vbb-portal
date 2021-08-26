@@ -28,7 +28,7 @@ function Navbar() {
       >
         <img src={miniLogo} alt="Logo" />
       </a>
-      <Link to="/" id="bar-header-link">
+      <Link to="/dashboard" id="bar-header-link">
         <h1 id="bar-header">
           Vbb Portal
           <span className="badge badge-secondary">NEW</span>
