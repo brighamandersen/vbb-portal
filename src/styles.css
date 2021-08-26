@@ -247,6 +247,22 @@ hr {
   min-height: 675px;
 }
 
+.btns a:first-child {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.btns a:last-child {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.questions-notice {
+  padding: 20px;
+  padding-left: 40px;
+  max-width: 900px;
+}
+
 #mentoring-session-box {
   flex: 1;
 }
@@ -338,6 +354,20 @@ hr {
 }
 
 /* BOOKING */
+
+.no-bookings {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  text-indent: 0px;
+  color: var(--orange);
+}
+
+.make-booking-header {
+  text-indent: 0px;
+  font-style: italic;
+  color: var(--green);
+}
 
 #booking-box {
   width: 550px;
