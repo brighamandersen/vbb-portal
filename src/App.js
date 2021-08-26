@@ -8,8 +8,8 @@ import Dashboard from "./routes/Dashboard";
 import Register from "./routes/Register";
 import Landing from "./routes/Landing";
 import SessionDetails from "./routes/SessionDetails";
-import SessionsContext from "./SessionsContext";
-import useLocalStorage from "./useLocalStorage";
+import SessionsContext from "./utils/SessionsContext";
+import useLocalStorage from "./utils/useLocalStorage";
 
 function App() {
   const [sessions, setSessions] = useLocalStorage("sessions", []);

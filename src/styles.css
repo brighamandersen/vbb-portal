@@ -405,6 +405,11 @@ input {
   height: 100%;
 }
 
+.success-step {
+  display: flex;
+  flex-direction: column;
+}
+
 .register-form {
   padding-left: 15%;
   padding-right: 15%;

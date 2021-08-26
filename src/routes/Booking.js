@@ -11,9 +11,9 @@ import {
   TIMES,
   TIME_ZONES,
   WEEKDAYS,
-} from "../constants";
-import { generateEndDate, generateSessionId } from "../helpers";
-import SessionsContext from "../SessionsContext";
+} from "../utils/constants";
+import { generateEndDate, generateSessionId } from "../utils/helpers";
+import SessionsContext from "../utils/SessionsContext";
 
 function Booking() {
   const [myBooking, setMyBooking] = useState(BOOKING_SKELETON);

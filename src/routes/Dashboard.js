@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import SessionsContext from "../SessionsContext";
+import SessionsContext from "../utils/SessionsContext";
 
 function Dashboard() {
   const { sessions } = useContext(SessionsContext);

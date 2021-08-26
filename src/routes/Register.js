@@ -83,24 +83,6 @@ class Register extends React.Component {
     this.setState({
       currentStep: 6,
     });
-    this.props.onAuth(
-      this.state.firstname,
-      this.state.lastname,
-      this.state.email,
-      this.state.vbbemail,
-      this.state.phone,
-      this.state.adult,
-      this.state.occupation,
-      this.state.vbb_chapter,
-      this.state.affiliation,
-      this.state.referral_source,
-      this.state.languages,
-      this.state.time_zone,
-      this.state.charged,
-      this.state.initials,
-      this.state.desired_involvement,
-      this.state.city
-    );
   };
 
   _next = () => {

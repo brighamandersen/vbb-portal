@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 
 import { Link, useHistory, useParams } from "react-router-dom";
-import SessionsContext from "../SessionsContext";
+import SessionsContext from "../utils/SessionsContext";
 
 function SessionDetails() {
   const { id } = useParams();

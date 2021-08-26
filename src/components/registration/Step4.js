@@ -1,5 +1,4 @@
 import React from "react";
-// import Donation from './Donation'
 
 function Step4(props) {
   if (props.state.currentStep !== 4) {
@@ -28,48 +27,6 @@ function Step4(props) {
       </a>
       <br />
       <br />
-      {/* <div>
-          <Donation/>
-        </div>
-        <div>
-          <label htmlFor="donation">Donation:</label>
-          <input
-            className="form-control"
-            id="donation"
-            name="donation"
-            type="text"
-            placeholder="5.00"
-          />
-          <label htmlFor="donation">Please confirm donation amount:</label>
-          <input
-            className="form-control"
-            id="donation"
-            name="donation"
-            type="text"
-            placeholder="5.00"
-          />
-          <div>
-            <label htmlFor="monthlyDonation">Monthly Donation</label>
-            <input type="checkbox" name="mmonthlyDonation" id="monthlyDonation">
-            </input>
-          </div>
-          <label htmlFor="donation">Credit Card Number:</label>
-          <input
-            className="form-control"
-            id="creditCard"
-            name="creditCard"
-            type="text"
-            placeholder="XXXX-XXXX-XXXX-XXXX"
-          />
-          <label htmlFor="donation">Name on Credit Card:</label>
-          <input
-            className="form-control"
-            id="cardName"
-            name="cardName"
-            type="text"
-            placeholder="Homer Simpson"
-          />  
-        </div> */}
     </div>
   );
 }

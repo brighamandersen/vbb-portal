@@ -1,4 +1,5 @@
 import React from "react";
+import { BlankOption, TIME_ZONES } from "../../utils/constants";
 
 function Step2(props) {
   if (props.currentStep !== 2) {
@@ -100,7 +101,6 @@ function Step2(props) {
         value={props.state.languages}
         onChange={props.handleChange}
       />
-
       <div>
         <label htmlFor="time_zone">What timezone are you in?</label>&nbsp;
         <select
@@ -109,14 +109,12 @@ function Step2(props) {
           onChange={props.handleChange}
           value={props.state.time_zone}
         >
-          {/* {moment.tz.names().map((tz) => {
-            if(tz.includes("Etc/GMT")) return null;
-            return (
-              <option key={tz} value={tz}>
-                {tz}
-              </option>
-            );
-          })} */}
+          {BlankOption}
+          {TIME_ZONES.map((tz) => (
+            <option key={tz.abbrev} value={tz.abbrev}>
+              {tz.full}
+            </option>
+          ))}
         </select>
       </div>
       <br />

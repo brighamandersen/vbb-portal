@@ -5,7 +5,7 @@ function Step5(props) {
     return null;
   }
   return (
-    <React.Fragment>
+    <>
       <div className="form-group step-form">
         <div>
           <h5>One last thing: How you can get more involved</h5>
@@ -76,7 +76,7 @@ function Step5(props) {
         />
       </div>
 
-      <div style={{ "whiteSpace": "pre-wrap", color: "red" }}>
+      <div style={{ whiteSpace: "pre-wrap", color: "red" }}>
         {props.hasProblems() && props.hasProblems()}
       </div>
 
@@ -87,7 +87,7 @@ function Step5(props) {
       >
         SIGN UP
       </button>
-    </React.Fragment>
+    </>
   );
 }
 

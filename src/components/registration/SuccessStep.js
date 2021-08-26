@@ -6,7 +6,7 @@ function SuccessStep(props) {
     return null;
   }
   return (
-    <div className="form-group step-form">
+    <div className="form-group step-form success-step">
       <p>Thanks for applying! Now you have access to your Dashboard!</p>
       <Link to="/dashboard" className="btn btn-light signin-btn">
         GO TO DASHBOARD
