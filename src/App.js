@@ -15,22 +15,29 @@ const defaultSessions = [
   {
     id: generateSessionId(),
     display: "test1",
-    endDate: "12-25-2021",
-    notes: "",
+    endDate: "2021-12-25",
+    notes: "note1",
   },
   {
     id: generateSessionId(),
     display: "test2",
-    endDate: "FIXME",
-    notes: "",
+    endDate: "1984-11-14",
+    notes: "note2",
   },
 ];
 
 function App() {
   const [sessions, setSessions] = useState(defaultSessions);
 
+  function updateSession(id, paramToChange, newValue) {
+    const temp = [...sessions];
+    const index = sessions.findIndex((obj) => obj.id === id);
+    temp[index][paramToChange] = newValue;
+    setSessions(temp);
+  }
+
   return (
-    <SessionsContext.Provider value={{ sessions }}>
+    <SessionsContext.Provider value={{ sessions, updateSession }}>
       <Router>
         <Navbar />
         <div className="content">

@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import axios from "axios";
 
 import { getDateStr } from "../helpers";
 import { Link, useHistory, useParams } from "react-router-dom";
@@ -7,13 +6,11 @@ import SessionsContext from "../SessionsContext";
 
 function SessionDetails() {
   const { id } = useParams();
-  console.log("id", id);
-  const { sessions } = useContext(SessionsContext);
-  console.log("sesh", sessions);
-  const thisSession = sessions.filter((session) => session.id === id)[0];
-  // let history = useHistory();
-  // // if (thisSession.length !== 1) history.push("/dashboard");
-  console.log("ts", thisSession);
+  let history = useHistory();
+  const { sessions, updateSession } = useContext(SessionsContext);
+
+  const session = sessions.filter((s) => s.id === id)[0];
+  if (!session) history.push("/dashboard");
 
   const [confirmUnbooking, setConfirmUnbooking] = useState(false);
 
@@ -26,9 +23,9 @@ function SessionDetails() {
         {!confirmUnbooking ? (
           <>
             <div className="d-block px-4 mb-4">
-              <h5>Adjust Mentoring Session ({thisSession.id}):</h5>
+              <h5>Adjust Mentoring Session ({session?.id}):</h5>
               <h4 className="session-details-link session-details-location px-5">
-                {thisSession.display}
+                {session?.display}
               </h4>
             </div>
             <div className="d-block mb-2">
@@ -36,7 +33,10 @@ function SessionDetails() {
               <input
                 type="date"
                 className="mx-4"
-                // value={thisSession.endDate}
+                value={session?.endDate}
+                onChange={(e) =>
+                  updateSession(session?.id, "endDate", e.target.value)
+                }
                 // min={getDateStr(14)} // min is 2 weeks out
                 // max={getDateStr(365)} // max is 1 year out
                 // onChange={(event) => {
@@ -56,7 +56,10 @@ function SessionDetails() {
               <textarea
                 className="w-100"
                 rows="3"
-                // value={this.state.mentorNotes}
+                value={session?.notes}
+                onChange={(e) =>
+                  updateSession(session?.id, "notes", e.target.value)
+                }
                 // onChange={(event) =>
                 //   this.setState({
                 //     mentorNotes: event.target.value,

@@ -5,6 +5,7 @@ import SessionsContext from "../SessionsContext";
 function Dashboard() {
   const hasBooking = false; //FIXME TEMPORARY
   const { sessions } = useContext(SessionsContext);
+  console.log("sessions", sessions);
 
   return (
     <div className="twocol-container dk-cream-bg">
