@@ -86,7 +86,7 @@ function SessionDetails() {
                 value={didCommunicate}
                 onChange={(e) => setDidCommunicate(e.target.value)}
               >
-                <option value="" style={{ display: "none" }}></option>
+                <option value="..." style={{ display: "none" }}></option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select>
@@ -101,7 +101,7 @@ function SessionDetails() {
                 value={proceedToUnbook}
                 onChange={(e) => setProceedToUnbook(e.target.value)}
               >
-                <option value="" style={{ display: "none" }}></option>
+                <option value="..." style={{ display: "none" }}></option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select>

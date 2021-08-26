@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import SessionsContext from "../SessionsContext";
 
 function Dashboard() {
-  const hasBooking = false; //FIXME TEMPORARY
   const { sessions } = useContext(SessionsContext);
-  console.log("sessions", sessions);
 
   return (
     <div className="twocol-container dk-cream-bg">
@@ -36,9 +34,9 @@ function Dashboard() {
           </>
         )}
         <div className="btns">
-          <a href="/booking/" className="btn btn-light book-btn dashboard-btn">
+          <Link to="/booking" className="btn btn-light book-btn dashboard-btn">
             + Book Mentoring Session
-          </a>
+          </Link>
           <br />
           <a
             className="btn btn-light gcal-btn dashboard-btn"

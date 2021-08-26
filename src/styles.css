@@ -365,6 +365,10 @@ hr {
   margin-bottom: 100px;
 }
 
+.label-select-box {
+  margin: 1rem 0;
+}
+
 select {
   float: right;
   width: 220px;
@@ -568,12 +572,8 @@ input {
     min-height: 850px;
   }
 
-  #time_zone {
+  #time-zone {
     margin-left: 90px;
-  }
-
-  #ex-space {
-    margin-bottom: -20px;
   }
 }
 

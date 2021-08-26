@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./styles.css";
 import Navbar from "./components/Navbar";
@@ -9,25 +9,14 @@ import Register from "./routes/Register";
 import Landing from "./routes/Landing";
 import SessionDetails from "./routes/SessionDetails";
 import SessionsContext from "./SessionsContext";
-import { generateSessionId } from "./helpers";
-
-const defaultSessions = [
-  {
-    id: generateSessionId(),
-    display: "test1",
-    endDate: "2021-12-25",
-    notes: "note1",
-  },
-  {
-    id: generateSessionId(),
-    display: "test2",
-    endDate: "1984-11-14",
-    notes: "note2",
-  },
-];
+import useLocalStorage from "./useLocalStorage";
 
 function App() {
-  const [sessions, setSessions] = useState(defaultSessions);
+  const [sessions, setSessions] = useLocalStorage("sessions", []);
+
+  function addSession(newSession) {
+    setSessions([...sessions, newSession]);
+  }
 
   function updateSession(id, paramToChange, newValue) {
     const temp = [...sessions];
@@ -43,7 +32,7 @@ function App() {
 
   return (
     <SessionsContext.Provider
-      value={{ sessions, updateSession, deleteSession }}
+      value={{ sessions, addSession, updateSession, deleteSession }}
     >
       <Router>
         <Navbar />
