@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 
-import { getDateStr } from "../helpers";
 import { Link, useHistory, useParams } from "react-router-dom";
 import SessionsContext from "../SessionsContext";
 
