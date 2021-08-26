@@ -58,7 +58,7 @@ class SessionDetails extends React.Component {
 
   render() {
     return (
-      <div className="cream-bg">
+      <div className="dk-cream-bg">
         <div
           className="session-details-card col-card mx-auto p-4"
           style={{ borderRadius: "30px" }}

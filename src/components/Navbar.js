@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import fullLogo from "../assets/vbb-full-logo.png";
 import miniLogo from "../assets/vbb-picture-logo.png";
 
-function Navbar({ loggedIn, setLoggedIn }) {
-  function logOut() {
-    setLoggedIn(false);
-  }
+function Navbar() {
+  const location = useLocation();
+  const loggedIn = location.pathname !== "/";
 
   return (
     <nav
@@ -61,13 +60,9 @@ function Navbar({ loggedIn, setLoggedIn }) {
             >
               DONATE
             </a>
-            <button
-              className="btn btn-light signout-btn"
-              type="button"
-              onClick={logOut}
-            >
+            <Link className="btn btn-light signout-btn" to="/">
               SIGN OUT
-            </button>
+            </Link>
           </div>
         ) : (
           <div className="btn-pair">
@@ -78,7 +73,7 @@ function Navbar({ loggedIn, setLoggedIn }) {
             >
               REGISTER
             </Link>
-            <Link to="/" className="btn btn-light signin-btn">
+            <Link to="/dashboard" className="btn btn-light signin-btn">
               SIGN IN
             </Link>
           </div>

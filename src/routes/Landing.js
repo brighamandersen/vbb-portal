@@ -22,11 +22,7 @@ export class Landing extends Component {
           </h4>
           <br />
           <div id="google-box">
-            <Link
-              className="btn btn-light signin-btn"
-              type="button"
-              href="/dashboard"
-            >
+            <Link className="btn btn-light signin-btn" to="/dashboard">
               SIGN IN
             </Link>
           </div>

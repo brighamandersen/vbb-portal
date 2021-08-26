@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./styles.css";
 import Navbar from "./components/Navbar";
@@ -10,11 +10,9 @@ import Landing from "./routes/Landing";
 import SessionDetails from "./routes/SessionDetails";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(true);
-
   return (
     <Router>
-      <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      <Navbar />
       <div className="content">
         <Route exact path="/" component={Landing} />
         <Route path="/register" component={Register} />
