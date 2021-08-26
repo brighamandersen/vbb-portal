@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import PropTypes from "prop-types";
 import { Link, useHistory } from "react-router-dom";
 import menteeComputer from "../assets/vbb-mentee-computer.png";
 import {
@@ -60,12 +59,6 @@ function Booking() {
       </select>
     </div>
   );
-
-  LabelWithSelect.propTypes = {
-    field: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    options: PropTypes.array.isRequired,
-  };
 
   return (
     <div className="twocol-container">
