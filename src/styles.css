@@ -163,7 +163,6 @@ a {
 .signin-btn,
 #requestsession-btn,
 .book-btn,
-.applychanges-btn,
 .l3-btn,
 .l8-btn {
   background-color: var(--green);
@@ -204,18 +203,8 @@ a {
   background-color: var(--orange);
 }
 
-.applychanges-btn {
-  float: right;
-}
-
-.applychanges-btn:disabled,
-.applychanges-btn:disabled:hover {
-  background-color: lightgray;
-}
-
-.applychanges-btn:hover,
 .unbook-btn:hover {
-  background-color: var(--blue);
+  background-color: red;
 }
 
 hr {
@@ -585,11 +574,6 @@ input {
 
   #ex-space {
     margin-bottom: -20px;
-  }
-
-  .unbook-btn,
-  .applychanges-btn {
-    float: left;
   }
 }
 

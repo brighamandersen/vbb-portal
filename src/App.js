@@ -36,8 +36,15 @@ function App() {
     setSessions(temp);
   }
 
+  function deleteSession(id) {
+    const temp = sessions.filter((s) => s.id !== id);
+    setSessions(temp);
+  }
+
   return (
-    <SessionsContext.Provider value={{ sessions, updateSession }}>
+    <SessionsContext.Provider
+      value={{ sessions, updateSession, deleteSession }}
+    >
       <Router>
         <Navbar />
         <div className="content">

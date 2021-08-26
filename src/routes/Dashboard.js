@@ -12,7 +12,7 @@ function Dashboard() {
       <div className="column col-card" id="mentoring-session-box">
         <h1 className="vbb-header">My Weekly Mentoring Session</h1>
 
-        {sessions?.length > 1 ? (
+        {sessions?.length > 0 ? (
           <ul>
             {sessions.map((session) => (
               <li className="mb-2 mr-2" key={session.id}>
