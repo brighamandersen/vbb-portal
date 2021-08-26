@@ -41,11 +41,7 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/booking" component={Booking} />
-          <Route
-            // exact
-            path="/session-details/:id"
-            component={SessionDetails}
-          />
+          <Route path="/session-details/:id" component={SessionDetails} />
         </div>
         <footer>&copy; Village Book Builders | All Rights Reserved</footer>
       </Router>
