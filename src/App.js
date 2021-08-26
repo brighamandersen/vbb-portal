@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./styles.css";
+import Navbar from "./components/Navbar";
+import { Route } from "react-router-dom";
+import Booking from "./routes/Booking";
+import Dashboard from "./routes/Dashboard";
+import Register from "./routes/Register";
+import Landing from "./routes/Landing";
+import SessionDetails from "./routes/SessionDetails";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      <div className="content">
+        <Route exact path="/" component={Landing} />
+        <Route path="/register" component={Register} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/booking" component={Booking} />
+        <Route
+          exact
+          path="/sessiondetails/:sessionid"
+          component={SessionDetails}
+        />
+      </div>
+      <footer>&copy; Village Book Builders | All Rights Reserved</footer>
+    </Router>
   );
 }
 
