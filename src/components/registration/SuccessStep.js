@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SuccessStep(props) {
   if (props.state.currentStep !== 6) {
@@ -6,18 +7,10 @@ function SuccessStep(props) {
   }
   return (
     <div className="form-group step-form">
-      <p>
-        Thanks for applying! Please check your email for further instructions
-        (mail sent to {props.state.email}), or if you see an error message
-        above, please follow the instructions it gives or&nbsp;
-        <a href="mailto:mentor@villagebookbuilders.org">
-          contact our mentor advisors
-        </a>
-        &nbsp;for more assistance
-      </p>
-      <a className="btn btn-light signin-btn" type="button" href="/">
-        SIGN IN
-      </a>
+      <p>Thanks for applying! Now you have access to your Dashboard!</p>
+      <Link to="/dashboard" className="btn btn-light signin-btn">
+        GO TO DASHBOARD
+      </Link>
     </div>
   );
 }

@@ -21,11 +21,7 @@ function Landing() {
         <br />
         <div id="create-account-box">
           <p>Don't have an account with us yet?</p>
-          <Link
-            className="btn btn-light register-btn"
-            type="button"
-            href="/register"
-          >
+          <Link to="/register" className="btn btn-light register-btn">
             REGISTER
           </Link>
         </div>
