@@ -296,9 +296,21 @@ hr {
   margin: auto;
 }
 
+#create-account-box p {
+  padding-left: 0;
+  font-size: 20px;
+  color: var(--orange);
+  font-weight: bolder;
+}
+
 #signin-picture-box {
   margin: 5vw;
   max-width: 800px;
+}
+
+#signin-picture {
+  width: 600px;
+  margin: 5vw;
 }
 
 .loading-spinner {
