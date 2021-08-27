@@ -1,4 +1,4 @@
-# VBB Portal - A Mentor <-> Mentee Session Booking Portal
+# VBB Portal - A portal for booking interational tutoring sessions
 
 ### Created by Village Book Builders, used by Nike and Oracle
 
