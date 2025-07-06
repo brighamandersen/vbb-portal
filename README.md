@@ -2,12 +2,6 @@
 
 **Created by Village Book Builders, used by Nike and Oracle**
 
-![Demo Screenshot 1](./README-demo-screenshot1.webp)
-
-![Demo Screenshot 2](./README-demo-screenshot2.webp)
-
-![Demo Screenshot 3](./README-demo-screenshot3.webp)
-
 ![Home Screenshot](./README-assets/README-home-screenshot.png)
 
 ![Dashboard Screenshot](./README-assets/README-dashboard-screenshot.png)
