@@ -1,12 +1,12 @@
 # VBB Portal - A portal for booking interational tutoring sessions ✈
 
+**Created by Village Book Builders, used by Nike and Oracle**
+
 ![Demo Screenshot 1](./README-demo-screenshot1.webp)
 
 ![Demo Screenshot 2](./README-demo-screenshot2.webp)
 
 ![Demo Screenshot 3](./README-demo-screenshot3.webp)
-
-### Created by Village Book Builders, used by Nike and Oracle
 
 This was the project I worked on while interning at VBB (Village Book Builders) as a Full Stack Developer.
 
