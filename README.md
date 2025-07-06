@@ -8,6 +8,14 @@
 
 ![Demo Screenshot 3](./README-demo-screenshot3.webp)
 
+![Home Screenshot](./README-assets/README-home-screenshot.png)
+
+![Dashboard Screenshot](./README-assets/README-dashboard-screenshot.png)
+
+![Registration Screenshot](./README-assets/README-registration-screenshot.png)
+
+![Edit Session Screenshot](./README-assets/README-edit-session-screenshot.png)
+
 This was the project I worked on while interning at VBB (Village Book Builders) as a Full Stack Developer.
 
 Although I did both front-end and back-end, my efforts were primarily focused on the front-end. We used ReactJS on the front-end then Django (a Python web development framework) on the back-end. This website was originally active but has since been deprecated, but with the permission of VBB I was able to recreate the front-end to showcase as part of my portfolio.
